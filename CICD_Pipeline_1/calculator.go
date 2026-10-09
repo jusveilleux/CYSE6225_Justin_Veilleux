@@ -19,19 +19,19 @@ func main() {
 	fmt.Print("Enter second number : ")
 	fmt.Scan(&b)
 	if pemdas_choice == 1 {
-    	result := Addition(a, b)
-    	println(a, "added to", b, "=", result)
-	}else if pemdas_choice == 2{
+		result := Addition(a, b)
+		println(a, "added to", b, "=", result)
+	} else if pemdas_choice == 2 {
 		result := Subtract(a, b)
-    	println(a, "subtracted by", b, "=", result)
-	}else if pemdas_choice == 3{
+		println(a, "subtracted by", b, "=", result)
+	} else if pemdas_choice == 3 {
 		result := Divide(a, b)
-    	println(a, "divided by", b, "=", result)
-	}else if pemdas_choice == 4{
+		println(a, "divided by", b, "=", result)
+	} else if pemdas_choice == 4 {
 		result := Multiply(a, b)
-    	println(a, "multiplied by", b, "=", result)
+		println(a, "multiplied by", b, "=", result)
 	}
-	
+
 }
 
 func Addition(a int, b int) int {
@@ -44,9 +44,9 @@ func Subtract(a int, b int) int {
 
 func Divide(a int, b int) int {
 	if b == 0 {
-		print("you cannot divide by 0")
-	} else {
-		return a / b
+		print("you cannot divide by 0 ")
+		return 0
+
 	}
 	return a / b
 }
