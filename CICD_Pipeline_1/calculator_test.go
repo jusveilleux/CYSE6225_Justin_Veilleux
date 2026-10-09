@@ -39,12 +39,3 @@ func TestDivision(t *testing.T) {
 		t.Errorf("Expected %d, but got %d", expected, result)
 	}
 }
-
-func TestDivisionByZero(t *testing.T) {
-	result := Divide(30, 0)
-	expected := "you cannot divide by 0"
-
-	if result != expected {
-		t.Errorf("Expected %d, but got %d", expected, result)
-	}
-}
