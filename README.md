@@ -12,3 +12,4 @@ Once the two numbers are chosen such as 1 and 2 they will be plugged into the se
 run go test . in order to run the needed unit tests for Calculator.go
 
 On every Git Push in the actions tab the calculator automatically runs the calculator_test.go file ensuring any of the calculator operations haven't broken in a build.
+If you want to run the build again just go to the actions tab. Under workflows press the one named go and on the top right there will be a green button named run workflow. Pressing this will rebuild the test build ensuring you can actively test the files whenever.
